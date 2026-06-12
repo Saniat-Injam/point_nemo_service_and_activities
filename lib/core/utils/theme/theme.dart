@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart' hide AppBarThemeData;
+import 'package:google_fonts/google_fonts.dart';
+import 'package:point_nemo_service_and_activities/core/utils/constants/app_colors.dart';
+import 'package:point_nemo_service_and_activities/core/utils/theme/custom_themes/app_bar_theme.dart';
+import 'package:point_nemo_service_and_activities/core/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:point_nemo_service_and_activities/core/utils/theme/custom_themes/text_field_theme.dart';
+
+class AppTheme {
+  AppTheme._();
+
+  static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
+    fontFamily: GoogleFonts.smoochSans().fontFamily,
+    brightness: Brightness.light,
+    primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: Colors.white,
+    // textTheme: AppTextTheme.lightTextTheme,
+    elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
+    appBarTheme: AppBarThemeData.lightAppBarTheme,
+    inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme,
+  );
+
+  static ThemeData darkTheme = ThemeData(
+    useMaterial3: true,
+    fontFamily: GoogleFonts.smoochSans().fontFamily,
+    brightness: Brightness.dark,
+    primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: Colors.black,
+    // textTheme: AppTextTheme.darkTextTheme,
+    elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
+    appBarTheme: AppBarThemeData.darkAppBarTheme,
+    inputDecorationTheme: AppTextFormFieldTheme.darkInputDecorationTheme,
+  );
+}
