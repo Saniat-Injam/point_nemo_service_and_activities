@@ -8,7 +8,6 @@ import 'package:point_nemo_service_and_activities/core/services/firebase_messagi
 import 'package:point_nemo_service_and_activities/core/services/local_notification_service.dart';
 import 'package:point_nemo_service_and_activities/core/services/storage_service.dart';
 import 'package:point_nemo_service_and_activities/core/utils/logging/loggerformain.dart';
-import 'package:point_nemo_service_and_activities/firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,12 +19,12 @@ void main() async {
 
   await StorageService.init();
 
-
   // Firebase Initialization
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  //await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   /// Initialize Local Notification Service
   final localNotificationService = LocalNotificationService.instance();
   await localNotificationService.init();
+
   /// Initialize Firebase Messaging Service
   final firebaseMessagingService = FirebaseMessagingService.instance();
   await firebaseMessagingService.init(
