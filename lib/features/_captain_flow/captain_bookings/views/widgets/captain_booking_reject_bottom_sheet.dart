@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:point_nemo_service_and_activities/core/custom/more_widgets/custom_text_style.dart';
 import 'package:point_nemo_service_and_activities/core/utils/constants/app_sizer.dart';
 import 'package:point_nemo_service_and_activities/features/_captain_flow/captain_bookings/controllers/booking_controller.dart';
-import 'package:point_nemo_service_and_activities/features/_captain_flow/captain_bookings/views/screens/captain_reject_booking_screen.dart';
 
 class BookingRejectBottomSheet extends StatelessWidget {
   const BookingRejectBottomSheet({super.key, required this.id});

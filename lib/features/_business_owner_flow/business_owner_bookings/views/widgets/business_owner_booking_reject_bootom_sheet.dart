@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:point_nemo_service_and_activities/core/custom/more_widgets/custom_text_style.dart';
 import 'package:point_nemo_service_and_activities/core/utils/constants/app_sizer.dart';
 import 'package:point_nemo_service_and_activities/features/_business_owner_flow/business_owner_bookings/controllers/business_owner_booking_controller.dart';
-import 'package:point_nemo_service_and_activities/features/_business_owner_flow/business_owner_bookings/views/screens/business_owner_reject_booking_screen.dart';
 
 class BookingRejectBottomSheet extends StatelessWidget {
   const BookingRejectBottomSheet({super.key, required this.id});

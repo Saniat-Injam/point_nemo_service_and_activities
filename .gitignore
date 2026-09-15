@@ -54,7 +54,9 @@ app.*.map.json
 # ios/Podfile.lock
 # android/app/src/main/AndroidManifest.xml
 
+# Environment & Sensitive Configs
 .env
+resume.md
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 lib/firebase_options.dart
